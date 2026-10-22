@@ -1,8 +1,17 @@
-.venv/
+# macOS & Windows
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Python & uv
 __pycache__/
+*.py[cod]
+.venv/
+
+# Tooling & Secrets
 .pytest_cache/
 .ruff_cache/
 .env
-*.pyc
-.idea
-uv.lock
