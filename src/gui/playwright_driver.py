@@ -1,5 +1,5 @@
 from playwright.sync_api import sync_playwright
-from src.gui.driver import GuiDriver
+from gui.driver import GuiDriver
 
 
 class PlaywrightDriver(GuiDriver):

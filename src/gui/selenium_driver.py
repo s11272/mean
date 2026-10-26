@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from src.gui.driver import GuiDriver
+from gui.driver import GuiDriver
 
 
 class SeleniumDriver(GuiDriver):
