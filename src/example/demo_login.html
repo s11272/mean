@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QA Core Demo</title>
+</head>
+<body>
+  <h2>System Login</h2>
+  <input id="username" type="text" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button id="login-btn" type="button" onclick="
+    const u = document.getElementById('username').value;
+    const p = document.getElementById('password').value;
+    const msg = document.getElementById('flash');
+    msg.textContent = (u === 'admin' && p === 'secret') ? 'Welcome, admin!' : 'Invalid credentials';
+    msg.style.display = 'block';
+  ">Login</button>
+  <div id="flash" style="display:none;"></div>
+</body>
+</html>

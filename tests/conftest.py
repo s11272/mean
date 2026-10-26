@@ -1,10 +1,10 @@
 from collections.abc import Iterator
 
 import pytest
-from gui.driver import GuiDriver
-from gui.factory import create_driver
 
 from config import Settings, get_settings
+from gui.driver import GuiDriver
+from gui.factory import create_driver
 
 
 @pytest.fixture(scope="session")
