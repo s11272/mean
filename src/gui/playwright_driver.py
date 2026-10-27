@@ -16,7 +16,7 @@ class PlaywrightDriver(GuiDriver):
         self._page.click(selector)
 
     def fill(self, selector: str, value: str) -> None:
-        self._page.fill(selector)
+        self._page.fill(selector, value)
 
     def get_text(self, selector: str) -> str:
         return self._page.locator(selector).inner_text()

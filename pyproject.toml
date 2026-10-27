@@ -23,6 +23,9 @@ dev = [
 pythonpath = ["src"]
 testpaths = ["tests"]
 addopts = "-v -s --tb=short -m 'not draft'"
+filterwarnings = [
+    "ignore:Unknown pytest.mark.qtest_:pytest.PytestUnknownMarkWarning",
+]
 
 [tool.ruff]
 line-length = 100
